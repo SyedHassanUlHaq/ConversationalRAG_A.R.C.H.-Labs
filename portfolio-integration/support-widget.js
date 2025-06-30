@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     <div class="arch-chat-footer">
                         <div class="arch-footer-text">
-                            <span>🚀 Powered by A.R.C.H. Labs AI</span>
+                            <span>Powered by A.R.C.H. Labs</span>
                         </div>
                     </div>
                 </div>
@@ -124,5 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 8000);
 
-    console.log('🚀 A.R.C.H. Labs Support Widget loaded');
+    console.log('A.R.C.H. Labs Support Widget loaded');
 }); 

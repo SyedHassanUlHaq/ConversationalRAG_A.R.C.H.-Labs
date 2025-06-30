@@ -6,7 +6,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    font-family: 'Open Sans', 'Raleway', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Support Button */
@@ -14,23 +14,24 @@
     position: relative;
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    border: none;
 }
 
 .arch-support-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.4);
-    width: 140px;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    width: 120px;
     border-radius: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .arch-support-button:hover .arch-button-text {
@@ -41,14 +42,18 @@
 .arch-button-content {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
 }
 
 .arch-button-content i {
     font-size: 24px;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .arch-button-text {
@@ -60,7 +65,7 @@
     white-space: nowrap;
 }
 
-/* Pulse Animation - matches your portfolio style */
+/* Pulse Animation */
 .arch-pulse-ring {
     position: absolute;
     top: 50%;
@@ -68,7 +73,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(255, 107, 53, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     animation: archPulse 2s infinite;
 }
@@ -91,15 +96,15 @@
     right: 0;
     width: 380px;
     height: 600px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     transform: translateY(20px) scale(0.95);
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .arch-chat-window.active {
@@ -108,15 +113,16 @@
     visibility: visible;
 }
 
-/* Chat Header - matches your portfolio gradient */
+/* Chat Header */
 .arch-chat-header {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
     color: white;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 16px 16px 0 0;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .arch-header-content {
@@ -126,22 +132,21 @@
 }
 
 .arch-avatar {
-    width: 42px;
-    height: 42px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    backdrop-filter: blur(10px);
 }
 
 .arch-header-text h4 {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 2px;
-    font-family: 'Raleway', sans-serif;
+    margin: 0 0 2px 0;
 }
 
 .arch-status {
@@ -149,8 +154,7 @@
     align-items: center;
     gap: 6px;
     font-size: 12px;
-    opacity: 0.95;
-    font-family: 'Open Sans', sans-serif;
+    opacity: 0.9;
 }
 
 .arch-status-dot {
@@ -175,62 +179,58 @@
     padding: 8px;
     border-radius: 50%;
     transition: all 0.3s ease;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .arch-close-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     opacity: 1;
     transform: rotate(90deg);
 }
 
 /* Chat Content */
 .arch-chat-iframe-container {
-    height: calc(100% - 140px);
-    background: #f8fafc;
+    height: calc(100% - 100px);
+    background: #0f0f0f;
 }
 
 .arch-chat-iframe-container iframe {
     border: none;
     background: white;
-    width: 100%;
-    height: 100%;
 }
 
-/* Chat Footer */
+/* Chat Footer - Made thinner and professional */
 .arch-chat-footer {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    border-top: 1px solid #e2e8f0;
-    padding: 12px 20px;
+    background: #1a1a1a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
     text-align: center;
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 20px 20px;
 }
 
 .arch-footer-text {
-    font-size: 11px;
-    color: #64748b;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* Notification Badge */
 .arch-notification-badge {
     position: absolute;
-    top: -6px;
-    right: -6px;
-    width: 24px;
-    height: 24px;
+    top: -5px;
+    right: -5px;
+    width: 22px;
+    height: 22px;
     background: #ef4444;
+    border: 2px solid #1a1a1a;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     animation: archBounce 2s infinite;
-    border: 3px solid white;
-    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
 }
 
 .arch-notification-badge.hidden {
@@ -259,8 +259,6 @@
         max-width: 380px;
         right: 20px;
         bottom: 80px;
-        height: calc(100vh - 120px);
-        max-height: 600px;
     }
 }
 
@@ -276,7 +274,7 @@
     }
     
     .arch-support-button:hover {
-        width: 130px;
+        width: 110px;
     }
     
     .arch-button-content i {
@@ -291,9 +289,9 @@
     }
 }
 
-/* Integration with portfolio animations */
+/* Smooth Entrance Animation */
 .arch-support-widget {
-    animation: archSlideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 2s both;
+    animation: archSlideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1s both;
 }
 
 @keyframes archSlideInUp {
@@ -305,6 +303,23 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/* Integration Specific Overrides */
+/* These ensure the widget works well with existing portfolio styles */
+.arch-support-widget * {
+    box-sizing: border-box;
+}
+
+/* Prevent conflicts with existing styles */
+.arch-support-widget,
+.arch-support-widget * {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Ensure high z-index for proper layering */
+.arch-support-widget {
+    z-index: 999999;
 }
 
 /* Dark mode support for portfolio */
