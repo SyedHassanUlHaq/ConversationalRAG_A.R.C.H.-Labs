@@ -1,5 +1,5 @@
 [
-  {
+    {
     "question": "What services does A.R.C.H. Labs offer?",
     "answer": "A.R.C.H. Labs provides comprehensive software development services including web development (React, Django), mobile app development (cross-platform), AI and machine learning solutions, agentic AI systems, process automation (Zapier, n8n, UIPath), browser extensions, desktop applications, API development, cloud solutions, SEO, and database management. We specialize in custom solutions tailored to your specific business needs."
   },
@@ -94,5 +94,5 @@
   {
     "question": "What is your approach to data security and privacy?",
     "answer": "Data security and privacy are paramount in all our projects. We implement OWASP security standards, use encryption for data at rest and in transit, follow secure coding practices, implement proper authentication and authorization, and ensure compliance with relevant data protection regulations. Security is built into every solution we develop."
-  }
-]
+    }
+  ]
