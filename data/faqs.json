@@ -1,0 +1,98 @@
+[
+  {
+    "question": "What services does A.R.C.H. Labs offer?",
+    "answer": "A.R.C.H. Labs provides comprehensive software development services including web development (React, Django), mobile app development (cross-platform), AI and machine learning solutions, agentic AI systems, process automation (Zapier, n8n, UIPath), browser extensions, desktop applications, API development, cloud solutions, SEO, and database management. We specialize in custom solutions tailored to your specific business needs."
+  },
+  {
+    "question": "How much do your services cost?",
+    "answer": "Our pricing is flexible and determined based on specific project requirements and scope. We offer hourly rates, project-based pricing, and retainer agreements. For accurate pricing information tailored to your project, please contact us directly at ahsantoufiq@archlabs.tech or call/WhatsApp +923121359857 to discuss your specific needs."
+  },
+  {
+    "question": "Do you provide free consultations?",
+    "answer": "Yes! We offer initial consultations to understand your project requirements. The consultation process varies by project complexity, but we're happy to discuss your needs and provide technical feasibility analysis. Contact us at ahsantoufiq@archlabs.tech or +923121359857 to schedule a consultation."
+  },
+  {
+    "question": "What technologies do you specialize in?",
+    "answer": "Our technology stack includes: Backend (Django, FastAPI), Frontend (React, Next.js), AI/ML (TensorFlow, PyTorch, LangChain, LangGraph), Cloud (AWS, Azure, Google Cloud), Databases (PostgreSQL, MongoDB, Redis), Automation (Zapier, n8n, UIPath, Power Automate), and many third-party API integrations including Stripe, Twilio, Google Maps, and OpenAI."
+  },
+  {
+    "question": "Can you help with AI and machine learning projects?",
+    "answer": "Absolutely! We specialize in AI and ML solutions including custom model development, natural language processing, computer vision, agentic AI systems, chatbots, predictive analytics, and automation. We work with TensorFlow, PyTorch, Hugging Face, LangChain, and other cutting-edge AI technologies to create intelligent solutions for your business."
+  },
+  {
+    "question": "Do you work with startups or only large companies?",
+    "answer": "We work with anyone in need of software solutions - from individual entrepreneurs and startups to large enterprises. Every project receives our full attention and expertise, regardless of size. We tailor our approach and solutions to fit your specific requirements and budget."
+  },
+  {
+    "question": "How long does a typical project take?",
+    "answer": "Project timelines vary significantly based on complexity, scope, and specific requirements. Simple websites might take 2-4 weeks, while complex AI systems or enterprise applications can take several months. We provide detailed timeline estimates during our consultation process based on your specific project needs."
+  },
+  {
+    "question": "Do you provide ongoing support after project completion?",
+    "answer": "Yes, we offer ongoing support and maintenance services including performance monitoring, security updates, feature enhancements, and technical support. The level of support varies by project and can be discussed during the planning phase. We believe in long-term partnerships with our clients."
+  },
+  {
+    "question": "Can you integrate with our existing systems?",
+    "answer": "Absolutely! We specialize in API development and third-party integrations. Whether you need to connect with CRM systems, payment processors, cloud services, or custom databases, we can create seamless integrations. We work with popular APIs like Stripe, Twilio, Google services, and can also create custom API connections."
+  },
+  {
+    "question": "Do you work with mobile apps?",
+    "answer": "Yes, we develop cross-platform mobile applications that work on both iOS and Android from a single codebase. Our mobile apps feature native performance, device integration, offline functionality, push notifications, and real-time updates. We can also integrate mobile apps with your existing web systems and APIs."
+  },
+  {
+    "question": "Can you help automate our business processes?",
+    "answer": "Definitely! Process automation is one of our specialties. We work with tools like Zapier, n8n, Microsoft Power Automate, and UIPath to streamline workflows, eliminate repetitive tasks, automate data entry, and optimize business operations. We can also create custom automation solutions tailored to your specific processes."
+  },
+  {
+    "question": "What makes A.R.C.H. Labs different from other development companies?",
+    "answer": "Our key differentiators include: 1) Custom solutions tailored to each scenario (no one-size-fits-all), 2) Deep expertise in AI and automation technologies, 3) Full-stack capabilities from frontend to cloud infrastructure, 4) Process automation specialization, 5) Proven track record with projects like ARCH Logistics SaaS platform, and 6) Commitment to ongoing innovation and learning."
+  },
+  {
+    "question": "Do you work on blockchain projects?",
+    "answer": "Currently, we focus on our core expertise areas and do not handle blockchain development projects. We specialize in web development, mobile apps, AI/ML, automation, and cloud solutions where we can provide the highest quality service and expertise."
+  },
+  {
+    "question": "Can you help with website SEO?",
+    "answer": "Yes! We provide comprehensive SEO services including technical SEO audits, on-page and off-page optimization, content strategy, keyword research, local SEO, performance optimization, Core Web Vitals improvement, and ongoing monitoring and reporting to improve your online visibility."
+  },
+  {
+    "question": "What is agentic AI and how can it help my business?",
+    "answer": "Agentic AI refers to intelligent systems that can make autonomous decisions, learn from data, and adapt to changing conditions. These AI agents can automate complex workflows, optimize processes, provide intelligent customer support, and make data-driven decisions without constant human intervention. We build custom agentic AI solutions using LangChain and LangGraph technologies."
+  },
+  {
+    "question": "Do you provide cloud hosting and deployment services?",
+    "answer": "Yes, we offer complete cloud solutions including deployment on AWS, Azure, and Google Cloud platforms. Our services include serverless architecture, container orchestration with Kubernetes, auto-scaling, load balancing, CI/CD pipeline setup, monitoring, and ongoing cloud infrastructure management."
+  },
+  {
+    "question": "Can you develop browser extensions?",
+    "answer": "Absolutely! We develop custom browser extensions for Chrome, Firefox, Safari, and Edge. Our extensions can include productivity tools, web scraping capabilities, content modification, API integrations, and custom automation features. All extensions are developed with Manifest V3 compliance and cross-browser compatibility."
+  },
+  {
+    "question": "How do I get started with a project?",
+    "answer": "Getting started is easy! Simply contact us via email at ahsantoufiq@archlabs.tech or call/WhatsApp +923121359857. We'll discuss your project requirements, provide technical consultation, and develop a customized solution approach. Our team will guide you through the entire process from concept to deployment."
+  },
+  {
+    "question": "Do you sign NDAs and confidentiality agreements?",
+    "answer": "Yes, we understand the importance of confidentiality in business relationships. We're happy to sign NDAs and confidentiality agreements to protect your intellectual property and sensitive business information. This is a standard part of our professional service offering."
+  },
+  {
+    "question": "Can you work with our existing development team?",
+    "answer": "Certainly! We can collaborate with your existing development team, provide consulting services, offer specific expertise in areas like AI or automation, or take on specific components of larger projects. We're flexible in our working arrangements and can adapt to your team's workflow and requirements."
+  },
+  {
+    "question": "What about project pricing and payment terms?",
+    "answer": "Our pricing structure is flexible and depends on project scope, complexity, and timeline. We offer hourly rates, fixed project pricing, and retainer agreements. Payment terms are typically structured in milestones for larger projects. For specific pricing information, please contact us at ahsantoufiq@archlabs.tech or +923121359857 to discuss your project details."
+  },
+  {
+    "question": "Do you provide training for the solutions you develop?",
+    "answer": "Yes, we provide comprehensive training and documentation for all solutions we develop. This includes user manuals, admin training, technical documentation, and hands-on training sessions as needed. We want to ensure your team can effectively use and maintain the solutions we create."
+  },
+  {
+    "question": "Can you help migrate our existing systems to modern technologies?",
+    "answer": "Absolutely! We specialize in system modernization and migration projects. Whether you need to move from legacy systems to modern frameworks, migrate to the cloud, or upgrade your technology stack, we can create a migration strategy that minimizes downtime and ensures data integrity."
+  },
+  {
+    "question": "What is your approach to data security and privacy?",
+    "answer": "Data security and privacy are paramount in all our projects. We implement OWASP security standards, use encryption for data at rest and in transit, follow secure coding practices, implement proper authentication and authorization, and ensure compliance with relevant data protection regulations. Security is built into every solution we develop."
+  }
+]

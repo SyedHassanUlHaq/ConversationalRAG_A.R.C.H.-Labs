@@ -1,0 +1,20 @@
+# Original requirements
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-core>=0.1.8
+langchain-text-splitters>=0.0.1
+chainlit>=1.0.200
+flask>=2.3.3
+faiss-cpu>=1.7.4
+python-dotenv>=1.0.0
+
+# Google AI (original)
+langchain-google-genai>=0.0.6
+google-generativeai>=0.3.2
+
+# OpenAI Alternative
+langchain-openai>=0.1.0
+openai>=1.0.0
+
+# Local Ollama Alternative (No API key needed)
+langchain-ollama>=0.1.0 

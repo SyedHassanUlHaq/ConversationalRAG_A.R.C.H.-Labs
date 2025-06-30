@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.R.C.H. Labs - Customer Support Widget Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Demo Portfolio Content -->
+    <div class="demo-content">
+        <header>
+            <h1>A.R.C.H. Labs</h1>
+            <p>Custom Software Development & AI Solutions</p>
+        </header>
+        
+        <section class="hero">
+            <h2>Transforming Ideas into Intelligent Solutions</h2>
+            <p>We specialize in AI-driven automation, custom development, and cutting-edge technology solutions.</p>
+        </section>
+        
+        <section class="services">
+            <h3>Our Services</h3>
+            <div class="service-grid">
+                <div class="service-card">Web Development</div>
+                <div class="service-card">Mobile Apps</div>
+                <div class="service-card">AI & ML</div>
+                <div class="service-card">Automation</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Customer Support Widget -->
+    <div class="support-widget" id="supportWidget">
+        <!-- Support Button -->
+        <div class="support-button" id="supportButton">
+            <div class="button-content">
+                <i class="fas fa-headset"></i>
+                <span class="button-text">Support</span>
+            </div>
+            <div class="pulse-ring"></div>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="header-content">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="header-text">
+                        <h4>A.R.C.H. Labs Support</h4>
+                        <span class="status">
+                            <span class="status-dot"></span>
+                            Online
+                        </span>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-iframe-container">
+                <iframe 
+                    id="chatIframe"
+                    src="http://localhost:8000"
+                    frameborder="0"
+                    width="100%"
+                    height="100%">
+                </iframe>
+            </div>
+            
+            <div class="chat-footer">
+                <div class="footer-text">
+                    <span>🚀 Powered by A.R.C.H. Labs AI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Badge -->
+        <div class="notification-badge" id="notificationBadge">
+            <span>1</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
