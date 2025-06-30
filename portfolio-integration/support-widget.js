@@ -1,7 +1,7 @@
 // A.R.C.H. Labs Customer Support Widget - Portfolio Integration
 document.addEventListener('DOMContentLoaded', function() {
-    // Configuration - UPDATE THIS URL AFTER DEPLOYMENT
-    const CHATBOT_URL = 'YOUR_DEPLOYED_RAG_URL_HERE'; // e.g., 'https://your-app.railway.app'
+    // Configuration - A.R.C.H. Labs RAG Chatbot Production URL
+    const CHATBOT_URL = 'https://web-production-d049c.up.railway.app';
     
     let isOpen = false;
     let hasInteracted = false;
