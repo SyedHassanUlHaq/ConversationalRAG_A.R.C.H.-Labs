@@ -66,7 +66,7 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "A.R.C.H. Labs Support"
 
 # default_theme = "dark"
 
@@ -75,21 +75,21 @@ name = "Assistant"
 # default_sidebar_state = "open"
 
 # Description of the assistant. This is used for HTML tags.
-# description = ""
+description = "Professional customer support for A.R.C.H. Labs software development services"
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
 cot = "full"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
-# custom_css = "/public/test.css"
+custom_css = "/public/custom.css"
 
 # Specify additional attributes for a custom CSS file
-# custom_css_attributes = "media=\"print\""
+# custom_css_attributes = "media=\"screen\""
 
 # Specify a JavaScript file that can be used to customize the user interface.
 # The JavaScript file can be served from the public directory.
-# custom_js = "/public/test.js"
+# custom_js = "/public/custom.js"
 
 # Specify additional attributes for custom JS file
 # custom_js_attributes = "async type = \"module\""

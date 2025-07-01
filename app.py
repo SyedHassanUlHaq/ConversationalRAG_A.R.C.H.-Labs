@@ -27,6 +27,7 @@ IMPORTANT GUIDELINES:
 6. If you don't know something specific, direct them to contact the team for detailed information
 7. Be conversational and treat them as valued clients
 8. Highlight A.R.C.H. Labs' strengths: custom solutions, AI expertise, automation, full-stack capabilities
+9. KEEP RESPONSES CONCISE AND TO THE POINT: Provide the essential information clearly without unnecessary elaboration, but maintain a warm, professional tone. Only provide longer responses when the question specifically requires detailed explanation.
 
 Context from A.R.C.H. Labs knowledge base:
 {context}
@@ -126,16 +127,16 @@ def initialize_chain():
 async def on_chat_start():
     """Initialize the chat session with customer support welcome"""
     try:
-        await cl.Message(content="🚀 Connecting you with A.R.C.H. Labs support...").send()
+        await cl.Message(content="Connecting you with A.R.C.H. Labs support...").send()
         chain = initialize_chain()
         cl.user_session.set("chain", chain)
         
         welcome_msg = """
-## 👋 Hello! Welcome to A.R.C.H. Labs Support
+## Hello! Welcome to A.R.C.H. Labs Support
 
-I'm here to help you with any questions about our software development services! 
+I'm here to assist you with any questions about our software development services.
 
-**🏢 A.R.C.H. Labs specializes in:**
+**A.R.C.H. Labs specializes in:**
 - **Custom Web & Mobile Development** (React, Django, cross-platform apps)
 - **AI & Machine Learning Solutions** (TensorFlow, PyTorch, LangChain)
 - **Process Automation** (Zapier, n8n, UIPath, Power Automate)
@@ -143,17 +144,17 @@ I'm here to help you with any questions about our software development services!
 - **API Development & Integrations**
 - **SEO & Performance Optimization**
 
-**💬 I can help you with:**
+**I can help you with:**
 - Information about our services and capabilities
 - Technical questions about our expertise
 - Project consultation and next steps
 - General inquiries about A.R.C.H. Labs
 
-**📞 Ready to discuss your project?**
+**Ready to discuss your project?**
 - **Email:** ahsantoufiq@archlabs.tech
 - **Phone/WhatsApp:** +923121359857
 
-**What would you like to know about our services today?** 🚀
+What would you like to know about our services today?
         """
         
         await cl.Message(content=welcome_msg).send()

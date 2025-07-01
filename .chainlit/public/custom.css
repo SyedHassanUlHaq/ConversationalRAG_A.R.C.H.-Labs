@@ -1,0 +1,115 @@
+/* Custom CSS for A.R.C.H. Labs Chainlit Support Interface */
+
+/* Fix message dialog height issue - prevent text cutting at bottom */
+.message-container {
+    padding-bottom: 1rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+/* Ensure proper message content spacing */
+.message-content {
+    padding-bottom: 0.5rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Fix chat input area spacing */
+.chat-input-container {
+    margin-top: 1rem !important;
+    padding: 1rem !important;
+}
+
+/* Improve message bubble styling */
+.user-message {
+    margin-bottom: 1rem !important;
+    padding: 0.75rem 1rem !important;
+}
+
+.assistant-message {
+    margin-bottom: 1.25rem !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* Ensure proper chat viewport height */
+.chat-viewport {
+    height: calc(100vh - 140px) !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Fix potential text overflow in messages */
+.message-text {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Improve overall chat container */
+.chat-container {
+    padding-bottom: 2rem !important;
+}
+
+/* Professional color scheme adjustments */
+.app-header {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%) !important;
+}
+
+/* Ensure step indicators are properly spaced */
+.step-container {
+    margin: 0.75rem 0 !important;
+    padding: 0.5rem !important;
+}
+
+/* Fix any potential z-index issues */
+.message-actions {
+    z-index: 10 !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .chat-viewport {
+        height: calc(100vh - 120px) !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .message-container {
+        padding-bottom: 0.75rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* Professional button styling */
+.button-primary {
+    background: #000000 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.button-primary:hover {
+    background: #333333 !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Improve code block styling */
+.code-block {
+    margin: 0.75rem 0 !important;
+    border-radius: 8px !important;
+}
+
+/* Professional scrollbar styling */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+} 

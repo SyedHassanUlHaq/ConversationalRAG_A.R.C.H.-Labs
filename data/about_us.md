@@ -2,10 +2,10 @@
 
 A.R.C.H. Labs is a cutting-edge software development company founded in 2024 by a team of passionate technologists. Our company name represents our founders' vision and commitment to building robust, innovative solutions.
 
-## Our Mission
+## Our Mission  
 To empower businesses and individuals with tailored software solutions that leverage the latest in AI, automation, and modern web technologies. We believe in creating solutions that not only meet current needs but anticipate future challenges.
 
-## Our Vision
+## Our Vision  
 To be a leading provider of intelligent software solutions, specializing in AI-driven automation and custom development that transforms how businesses operate in the digital age.
 
 ## Company Overview
