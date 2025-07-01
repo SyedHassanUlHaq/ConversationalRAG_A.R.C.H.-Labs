@@ -28,7 +28,3 @@ Let's start the conversation! 💬
 - **Phone/WhatsApp:** +923121359857
 
 We look forward to helping you with your development needs.
-
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
