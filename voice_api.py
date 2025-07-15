@@ -1,56 +1,56 @@
 from flask import Flask, request, jsonify, send_file, after_this_request
 import tempfile
 import os
-import wave
-import json as jsonlib
-import pyttsx3
-from vosk import Model, KaldiRecognizer
-import numpy as np
-import time
+import requests
 
 # Import chatbot logic from app.py
 from app import initialize_chain
 
 app = Flask(__name__)
 
-# Load Vosk model (download and extract a model, e.g. vosk-model-small-en-us-0.15)
-VOSK_MODEL_PATH = os.environ.get("VOSK_MODEL_PATH", "vosk-model-en-us-0.22")
-vosk_model = Model(VOSK_MODEL_PATH)
+# ElevenLabs API credentials (set these in your .env or environment)
+ELEVEN_API_KEY = os.environ.get("ELEVEN_API_KEY", "your_elevenlabs_api_key")
+ELEVEN_VOICE_ID = os.environ.get("ELEVEN_VOICE_ID", "your_voice_id")  # e.g. "21m00Tcm4TlvDq8ikWAM"
+ELEVEN_STT_MODEL_ID = os.environ.get("ELEVEN_STT_MODEL_ID", "eleven_monolingual_v1")
 
 # Initialize chatbot chain
 chain = initialize_chain()
 
 def transcribe_audio(audio_path):
-    wf = wave.open(audio_path, "rb")
-    rec = KaldiRecognizer(vosk_model, wf.getframerate())
-    rec.SetWords(True)
-    results = []
-    while True:
-        data = wf.readframes(4000)
-        if len(data) == 0:
-            break
-        if rec.AcceptWaveform(data):
-            results.append(jsonlib.loads(rec.Result()))
-    results.append(jsonlib.loads(rec.FinalResult()))
-    text = " ".join([r.get("text", "") for r in results])
-    return text.strip()
+    url = "https://api.elevenlabs.io/v1/speech-to-text"
+    headers = {
+        "xi-api-key": ELEVEN_API_KEY
+    }
+    data = {
+        "model_id": "scribe_v1"
+    }
+    with open(audio_path, "rb") as f:
+        files = {"file": f}
+        response = requests.post(url, headers=headers, data=data, files=files)
+    if response.status_code == 200:
+        return response.json().get("text", "")
+    else:
+        raise Exception(f"STT Error: {response.text}")
 
 def text_to_speech(text, output_path):
-    engine = pyttsx3.init()
-    engine.save_to_file(text, output_path)
-    engine.runAndWait()
-    # Wait for file to be written (pyttsx3 bug workaround)
-    timeout = 5  # seconds
-    poll_interval = 0.05
-    waited = 0
-    while not os.path.exists(output_path) and waited < timeout:
-        time.sleep(poll_interval)
-        waited += poll_interval
-    # Also check file size is nonzero
-    waited2 = 0
-    while os.path.exists(output_path) and os.path.getsize(output_path) == 0 and waited2 < timeout:
-        time.sleep(poll_interval)
-        waited2 += poll_interval
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOICE_ID}"
+    headers = {
+        "xi-api-key": ELEVEN_API_KEY,
+        "Content-Type": "application/json"
+    }
+    data = {
+        "text": text,
+        "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.5
+        }
+    }
+    response = requests.post(url, headers=headers, json=data)
+    if response.status_code == 200:
+        with open(output_path, "wb") as f:
+            f.write(response.content)
+    else:
+        raise Exception(f"TTS Error: {response.text}")
 
 @app.route("/voice-assistant", methods=["POST"])
 def voice_assistant():
@@ -69,7 +69,7 @@ def voice_assistant():
         result = chain.invoke({"question": user_text})
         response_text = result["answer"]
         # TTS
-        tts_path = audio_path.replace(".wav", "_tts.wav")
+        tts_path = audio_path.replace(".wav", "_tts.mp3")
         text_to_speech(response_text, tts_path)
         # Schedule cleanup after response is sent
         @after_this_request
@@ -86,9 +86,9 @@ def voice_assistant():
         # Return both text and audio
         response = send_file(
             tts_path,
-            mimetype="audio/wav",
+            mimetype="audio/mpeg",
             as_attachment=True,
-            download_name="response.wav"
+            download_name="response.mp3"
         )
         response.headers["X-Transcript"] = user_text
         response.headers["X-Response"] = response_text
